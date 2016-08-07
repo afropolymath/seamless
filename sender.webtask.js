@@ -72,11 +72,14 @@ module.exports = function (done) {
 
       // Make the Sendgrid request
       sg.API(sgRequest, function(error, response) {
-        if(error)
+        if(error) {
           sendFeedback("Your message not sent for some reason!", msisdn, function() {
             done(err);
           })
-        sendFeedback("Your message was sent successfully!", msisdn, done);
+        }
+        else {
+          sendFeedback("Your message was sent successfully!", msisdn, done);
+        }
       });
     }
   }
