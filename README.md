@@ -16,3 +16,21 @@ wt create sender.webtask.js -s NEXMO_API_KEY=<YOUR_NEXMO_API_KEY>
                             -s NEXMO_API_SECRET=<YOUR_NEXMO_API_SECRET>
                             -s SENDGRID_API_KEY=<YOUR_SENDGRID_API_KEY>
 ```
+
+### Using the Service
+
+To use the service, buy a new number on Nexmo in any country of your choice. You might also need to buy some credits for the status messages that get sent to you. Costs are as low as EUR 0.0057 per message and EUR 0.67 per number per month.
+
+Click the number to reveal it's settings. In the callback URL field, add the webtask URL that was generated when you ran the service.
+
+That's it. The service has been setup. Feel free to send an email message to your phone number whenever you don't have access to the internet.
+
+*Message Format*
+
+Ensure to begin the message you're sending with the e-mail address you're trying to send the message to.
+
+```
+<EMAIL_ADDRESS> MESSAGE_BODY
+```
+
+Now you won't feel stuck whenever you don't have internet.
