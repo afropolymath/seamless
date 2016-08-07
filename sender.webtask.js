@@ -7,7 +7,7 @@ module.exports = function (done) {
   var msisdn = ctx.data.msisdn;
   var message = ctx.data.text;
   var nexmoApiKey = ctx.secrets.NEXMO_API_KEY;
-  var nexmoApiSecret = ctx.secrets.NEXMO_SECRET;
+  var nexmoApiSecret = ctx.secrets.NEXMO_API_SECRET;
   var sendgridApiKey = ctx.secrets.SENDGRID_API_KEY;
   
   // Valid users dictionary
